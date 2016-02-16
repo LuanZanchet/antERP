@@ -1,0 +1,4 @@
+Buenas, segue explicação. 
+Está bem básico. Usuario, Empresa, Fornecedor, Cliente, Venda e Vendedor. 
+A empresa tem um fornecedor que Vende o produto, o produto tem uma venda que é feita para um cliente atraves de um vendedor(da de retirar o vendedor, ve o que vocês acham).
+Também pensei em separar o Produto em ProdutoComprado, ProdutoEmEstoque e ProdutoParaVenda, mas acho que não tem necessidade. 
