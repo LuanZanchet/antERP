@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @seller.name %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @seller.cpf %>
+</p>
+
+<p>
+  <strong>Salario:</strong>
+  <%= @seller.salario %>
+</p>
+
+<p>
+  <strong>Adress:</strong>
+  <%= @seller.adress %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @seller.company %>
+</p>
+
+<%= link_to 'Edit', edit_seller_path(@seller) %> |
+<%= link_to 'Back', sellers_path %>
