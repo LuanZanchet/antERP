@@ -1,0 +1,303 @@
+/* Tem 15 cores diferentes, a cor de fundo está padrão branco, so mudar depois.  */
+
+/* AZUL */ 
+.btnERPBLUE {
+display: inline-block;
+background-color: #0072C6;
+color: #FFFFFF;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+
+border: 0px;
+
+}
+
+.btnERPBLUE:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+/* VERMELHO */ 
+.btnERPRED {
+display: inline-block;
+background-color: #e62117;
+color: #FFFFFF;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPRED:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+/* VERDE */ 
+.btnERPGREEN {
+display: inline-block;
+background-color: #5aac44;
+color: #FFFFFF;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPGREEN:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+/* CINZA */ 
+.btnERPGREY{
+display: inline-block;
+background-color: #696969;
+color: #FFFFFF;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPGREY:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+/* AZUL DOIS */ 
+.btnERPBLUETWO{
+display: inline-block;
+background-color: #0bbbb4;
+color: #FFFFFF;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPBLUETWO:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+/* PRETO */ 
+.btnERPBLACK{
+display: inline-block;
+background-color: #302f31;
+color: #FFFFFF;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPBLACK:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+/* BRANCO */ 
+.btnERPWHITE{
+display: inline-block;
+background-color: #fff;
+color: black;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPWHITE:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+
+/* AMARELO */ 
+.btnERPYELLOW{
+display: inline-block;
+background-color: #fc3;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPYELLOW:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+/* VIOLETA */ 
+.btnERPVIOLET{
+display: inline-block;
+background-color: #FF00FF;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPVIOLET:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+
+/* ROSA */ 
+.btnERPPINK{
+display: inline-block;
+background-color: #FF1493;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPPINK:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+/* PRATA */ 
+.btnERPSILVER{
+display: inline-block;
+background-color: #e4e4e4;;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+
+}
+
+.btnERPSILVER:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+/* LARANJA */ 
+.btnERPORANGE{
+display: inline-block;
+background-color: #ff8126;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+font-weight: bold;
+
+}
+
+.btnERPORANGE:hover {
+background-image: linear-gradient(to bottom, transparent);
+cursor: pointer;
+}
+
+
+/* VIOLETA 2 */ 
+.btnERPVIOLET2{
+display: inline-block;
+background-color: #6b15a1;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+font-weight: bold;
+
+}
+
+.btnERPVIOLET2:hover {
+background-image: linear-gradient(to bottom, transparent);
+cursor: pointer;
+}
+
+
+/* VERDE FRACO */
+.btnERPGREEN2{
+display: inline-block;
+background-color: #7FFF00;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+font-weight: bold;
+
+}
+
+.btnERPVIOLET2:hover {
+background-image: linear-gradient(to bottom, transparent);
+cursor: pointer;
+}
+
+
+
+.btnERPYELLOW2{
+display: inline-block;
+background-color: #FFFF00;
+color: white;
+padding: 3px 12px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+border: 0px;
+font-weight: bold;
+
+}
+
+.btnERPYELLOW2:hover {
+background-image: linear-gradient(to bottom, transparent);
+cursor: pointer;
+}
+
