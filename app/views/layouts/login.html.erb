@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Seja Bem-Vindo!!!</title>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<meta charset="utf-8">
+		<link href="app/assets/stylesheets/loginregister.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="nossologoquenãoexiste.png" >
+
+	</head>
+	<body>
+
+		<h2 align="center">ANT ERP</h2>
+		<h2 align="center">O Sistema perfeito para a sua empresa!!!</h2>
+
+		<div class="container">
+			<div class="card card-container">
+				<!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+				<img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+				<p id="profile-name" class="profile-name-card"></p>
+				<form class="form-signin">
+					<span id="reauth-email" class="reauth-email"></span>
+					<!-- Formulario referente ao Login -->
+					<input type="text" id="inputUserLogin" class="form-control" placeholder="     Usuário" required autofocus name="LoginUser">
+					<input type="password" id="inputPasswordLogin" class="form-control" placeholder="     Senha" required name="LoginPassword">
+					<div id="remember" class="checkbox">
+						<label>
+							<input type="checkbox" value="remember-me" name="ckbremember">
+							Lembre-se de mim </label>
+
+					</div>
+					<br />
+					<!-- Botão para realizar o login -->
+					<button class="btn btn-lg btn-success btn-block btn-signin" type="submit" name="btnLogin">
+						Realizar Login
+					</button>
+
+				</form><!-- /form -->
+			<!-- Botão para ir para a pagina de cadastro -->
+				<form class="form-cadastro">
+
+					<button class="btn btn-lg btn-success btn-block btn-signin" id = "nolinkpurple" name="btnRegister">
+						<a href="register.html">Desejo me cadastrar</a>
+					</button>
+				</form>
+
+				<br />
+				<a href="#" class="forgot-password"> Não Lembro a minha senha </a>
+			</div><!-- /card-container -->
+
+		</div><!-- /container -->
+
+		<br />
+		<br />
+		<p align="center">
+			<i class="fa fa-copyright"></i> ANT Sistemas - Todos os direitos reservados.
+		</p>
+
+	</body>
