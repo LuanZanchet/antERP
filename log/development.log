@@ -1,10 +1,10 @@
   [1m[36m (281.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (483.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[35m (483.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`)
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Migrating to DeviseCreateUsers (20160218221903)
   [1m[35m (240.4ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (256.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
-  [1m[35m (279.9ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[35m (279.9ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`)
   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
   [1m[36m (39.7ms)[0m  [1mCOMMIT[0m
@@ -1824,8 +1824,8 @@ Processing by ProductsController#index as HTML
 Completed 500 Internal Server Error in 64ms (ActiveRecord: 1.0ms)
 
 ActionView::Template::Error (undefined method `nome' for #<User:0x007f9769e301e0>):
-    40: 
-    41: 
+    40:
+    41:
     42:           <li class="dropdown">
     43:             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.nome %> <b class="caret"></b></a>
     44:             <ul class="dropdown-menu">
@@ -4786,6 +4786,7 @@ Started GET "/assets/suppliers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44d
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-19 10:32:32 -0200
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2016-02-19 21:18:39 -0200
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Processing by PagesController#start as HTML
@@ -4885,12 +4886,12 @@ Processing by Devise::SessionsController#new as HTML
   Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (11.4ms)
 Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
   [1m[36m (326.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (483.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[35m (483.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`)
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Migrating to DeviseCreateUsers (20160218221903)
   [1m[35m (263.6ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (244.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
-  [1m[35m (302.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[35m (302.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`)
   [1m[36m (0.4ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
   [1m[36m (35.2ms)[0m  [1mCOMMIT[0m
@@ -5363,6 +5364,94 @@ NameError (undefined local variable or method `confirmed_at' for #<User:0x007fe4
   actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2016-02-19 11:44:33 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-19 11:44:33 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (6.0ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 576ms (Views: 560.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/btnANT.self-c13d37edc352f96e386c30b97e326d58f8ef361ee4506a597d1a259e63c0c7f1.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/adresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/scaffolds.self-29c44b748776df5fa894ee5680eee762e46eb21f176acc463f42add71bb3a6c1.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/sellers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/style.self-8811e229a10b6041589c2d1c7bbbb45f49f03665854449f79bc73c3ea0045090.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/suppliers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/adresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/sellers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/suppliers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-19 11:44:34 -0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-02-19 12:05:17 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4kAy8iYhJ9XVFYq+dsbrNLwDX/vqhAcUWkrl+ET4eQf7XbfSnjlZ7AwjnbxSbdROeB+PgNL2cZQ2cIp7ShI1XQ==", "user"=>{"email"=>"luanzanchet@outlook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'luanzanchet@outlook.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2016-02-19 14:05:17', `sign_in_count` = 2, `updated_at` = '2016-02-19 14:05:17' WHERE `users`.`id` = 1
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-19 12:05:17 -0200
+Processing by PagesController#start as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered pages/start.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2016-02-19 12:05:17 -0200
+
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
   web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -5385,6 +5474,7 @@ NameError (undefined local variable or method `confirmed_at' for #<User:0x007fe4
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -5403,12 +5493,12 @@ NameError (undefined local variable or method `confirmed_at' for #<User:0x007fe4
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.8ms)
   [1m[36m (429.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (446.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[35m (446.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`)
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Migrating to DeviseCreateUsers (20160218221903)
   [1m[35m (242.7ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (268.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
-  [1m[35m (254.9ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[35m (254.9ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`)
   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
   [1m[36m (31.8ms)[0m  [1mCOMMIT[0m
@@ -5468,6 +5558,68 @@ FOREIGN KEY (`supplier_id`)
   [1m[36m (29.6ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+  /home/mentor/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/mentor/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/mentor/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.2ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-02-19 12:05:31 -0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mcM1sPdJXJmFz2dHiUZngQm80Ic3gaMbaoFPsGlxffukT6u+NFdRVFMxMYyIqfjmJQcjiW/K0BBZ9ypqAqNRBQ=="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-19 12:05:31 -0200
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-19 12:05:31 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.7ms)
+  Rendered /home/mentor/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateSales (20160219151651)
+  [1m[35m (9.0ms)[0m  CREATE TABLE `sales` (`id` int(11) auto_increment PRIMARY KEY, `client_id` int(11), `seller_id` int(11), `product_id` int(11), `total` float, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_sales_on_client_id`  (`client_id`) ,  INDEX `index_sales_on_seller_id`  (`seller_id`) ,  INDEX `index_sales_on_product_id`  (`product_id`) ) ENGINE=InnoDB
+  [1m[36m (10.0ms)[0m  [1mALTER TABLE `sales` ADD CONSTRAINT `fk_rails_3fb137af04`
+FOREIGN KEY (`client_id`)
+  REFERENCES `clients` (`id`)
+[0m
+  [1m[35m (8.6ms)[0m  ALTER TABLE `sales` ADD CONSTRAINT `fk_rails_965c8091a9`
+FOREIGN KEY (`seller_id`)
+  REFERENCES `sellers` (`id`)
+
+  [1m[36m (11.9ms)[0m  [1mALTER TABLE `sales` ADD CONSTRAINT `fk_rails_afd82832c8`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160219151651')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5475,9 +5627,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'adresses'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `adresses`
   [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `adresses`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5485,9 +5643,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'clients'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `clients`
   [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.4ms)[0m  [1mSHOW CREATE TABLE `clients`[0m
+  [1m[35m (0.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5495,9 +5659,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'companies'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `companies`
   [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `companies`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5505,6 +5675,7 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'products'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `products`
   [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
@@ -5592,12 +5763,12 @@ Processing by Devise::SessionsController#new as HTML
   Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (21.4ms)
 Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.0ms)
   [1m[36m (358.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (449.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[35m (449.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`)
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Migrating to DeviseCreateUsers (20160218221903)
   [1m[35m (264.6ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (288.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
-  [1m[35m (257.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[35m (257.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`)
   [1m[36m (0.4ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
   [1m[36m (31.3ms)[0m  [1mCOMMIT[0m
@@ -5667,12 +5838,18 @@ WHERE fk.referenced_column_name is not null
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `adresses`
   [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.4ms)[0m  [1mSHOW CREATE TABLE `products`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
 FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
+<<<<<<< HEAD
   AND fk.table_name = 'clients'
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `clients`
@@ -5697,6 +5874,12 @@ WHERE fk.referenced_column_name is not null
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `products`
   [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+  AND fk.table_name = 'sales'
+
+  [1m[36m (0.4ms)[0m  [1mSHOW CREATE TABLE `sales`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5704,9 +5887,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'sellers'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `sellers`
   [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `sellers`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5714,9 +5903,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'suppliers'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `suppliers`
   [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `suppliers`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -5724,6 +5919,7 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'antERP_development'
   AND fk.table_name = 'users'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `users`
 
@@ -5862,3 +6058,7 @@ ActionController::RoutingError (No route matches [GET] "/style.css"):
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.4ms)
+=======
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `users`[0m
+>>>>>>> f8a49d145a27f173c41af3a7dc2aa972c984646a

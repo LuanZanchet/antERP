@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160218233811) do
+ActiveRecord::Schema.define(version: 20160219151651) do
 
   create_table "adresses", force: :cascade do |t|
     t.string   "street",     limit: 255
@@ -59,6 +59,19 @@ ActiveRecord::Schema.define(version: 20160218233811) do
   end
 
   add_index "products", ["supplier_id"], name: "index_products_on_supplier_id", using: :btree
+
+  create_table "sales", force: :cascade do |t|
+    t.integer  "client_id",  limit: 4
+    t.integer  "seller_id",  limit: 4
+    t.integer  "product_id", limit: 4
+    t.float    "total",      limit: 24
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "sales", ["client_id"], name: "index_sales_on_client_id", using: :btree
+  add_index "sales", ["product_id"], name: "index_sales_on_product_id", using: :btree
+  add_index "sales", ["seller_id"], name: "index_sales_on_seller_id", using: :btree
 
   create_table "sellers", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -110,6 +123,9 @@ ActiveRecord::Schema.define(version: 20160218233811) do
   add_foreign_key "clients", "adresses"
   add_foreign_key "companies", "adresses"
   add_foreign_key "products", "suppliers"
+  add_foreign_key "sales", "clients"
+  add_foreign_key "sales", "products"
+  add_foreign_key "sales", "sellers"
   add_foreign_key "sellers", "adresses"
   add_foreign_key "sellers", "companies"
   add_foreign_key "suppliers", "adresses"
