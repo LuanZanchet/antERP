@@ -4784,3 +4784,1081 @@ Started GET "/assets/suppliers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44d
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-19 10:32:32 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-19 21:18:39 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#start as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered pages/start.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 334ms (Views: 301.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2016-02-19 21:18:40 -0200
+
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-02-19 21:18:52 -0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sVStQYtVh3HvVQsBH5yDgGW+9K0LEAKmnRhxd5Lwgi+PcDsyMfasfLUKQtCloOWPt8xfi7WxmJveasoGwe+3xQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-19 21:18:52 -0200
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-19 21:18:52 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (7.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 73ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-19 22:20:36 -0200
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-19 22:20:36 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-19 22:20:40 -0200
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-19 22:20:40 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (4.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (326.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (483.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160218221903)
+  [1m[35m (263.6ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (244.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (302.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
+  [1m[36m (35.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAdresses (20160218223000)
+  [1m[35m (267.1ms)[0m  CREATE TABLE `adresses` (`id` int(11) auto_increment PRIMARY KEY, `street` varchar(255), `district` varchar(255), `number` int(11), `state` varchar(255), `city` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218223000')
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateClients (20160218224013)
+  [1m[35m (299.5ms)[0m  CREATE TABLE `clients` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `email` varchar(255), `cpf` varchar(255), `salario` float, `RG` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_clients_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB
+  [1m[36m (639.7ms)[0m  [1mALTER TABLE `clients` ADD CONSTRAINT `fk_rails_44f39ca513`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160218224013')[0m
+  [1m[35m (39.6ms)[0m  COMMIT
+Migrating to CreateCompanies (20160218224826)
+  [1m[36m (298.6ms)[0m  [1mCREATE TABLE `companies` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cnpj` varchar(255), `phone` varchar(255), `branch` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_companies_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (730.2ms)[0m  ALTER TABLE `companies` ADD CONSTRAINT `fk_rails_98f458437c`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218224826')
+  [1m[36m (30.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSellers (20160218230200)
+  [1m[35m (340.1ms)[0m  CREATE TABLE `sellers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cpf` varchar(255), `salario` varchar(255), `adress_id` int(11), `company_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_sellers_on_adress_id`  (`adress_id`) ,  INDEX `index_sellers_on_company_id`  (`company_id`) ) ENGINE=InnoDB
+  [1m[36m (751.3ms)[0m  [1mALTER TABLE `sellers` ADD CONSTRAINT `fk_rails_52989331b0`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (649.8ms)[0m  ALTER TABLE `sellers` ADD CONSTRAINT `fk_rails_10fb31c34b`
+FOREIGN KEY (`company_id`)
+  REFERENCES `companies` (`id`)
+
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218230200')
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSuppliers (20160218231047)
+  [1m[35m (330.5ms)[0m  CREATE TABLE `suppliers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cpnj` varchar(255), `phone` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_suppliers_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB
+  [1m[36m (584.3ms)[0m  [1mALTER TABLE `suppliers` ADD CONSTRAINT `fk_rails_a382d06035`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160218231047')[0m
+  [1m[35m (41.4ms)[0m  COMMIT
+Migrating to CreateProducts (20160218233811)
+  [1m[36m (330.6ms)[0m  [1mCREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `quantity` float, `price` float, `supplier_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_supplier_id`  (`supplier_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (595.0ms)[0m  ALTER TABLE `products` ADD CONSTRAINT `fk_rails_1aa9b0116b`
+FOREIGN KEY (`supplier_id`)
+  REFERENCES `suppliers` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218233811')
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'adresses'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `adresses`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'clients'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `clients`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'companies'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `companies`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `products`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'sellers'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `sellers`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'suppliers'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `suppliers`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 16:32:10 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-20 16:32:10 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (11.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 325ms (Views: 307.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-02-20 16:32:20 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ny2IFnaeaEVKg8aiLIuOksma7BWs5qcVH8WxbJd2iCggArE47oLQvy7CnPMdcB2emNDmgqyO155M0ovBePo4EQ==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'costa.diones@hotmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ny2IFnaeaEVKg8aiLIuOksma7BWs5qcVH8WxbJd2iCggArE47oLQvy7CnPMdcB2emNDmgqyO155M0ovBePo4EQ==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (7.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 157ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-02-20 16:32:27 -0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (8.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-20 16:32:36 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuYHstCArkvrpnVyeZtc5aYU4cw2FenjL+hhX1s2KDjxyT6cSJwWsY/nLyNIYM/p917rWzZ9mWh8/1vytLqYAQ==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'costa.diones@hotmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.9ms)
+
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007fe4b683a8e0>):
+  activemodel (4.2.5.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (3.5.6) lib/devise/models/confirmable.rb:102:in `confirmed?'
+  devise (3.5.6) lib/devise/models/confirmable.rb:177:in `confirmation_required?'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `block (2 levels) in halting_and_conditional'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `all?'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `block in halting_and_conditional'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.5.1) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.5.1) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.5.1) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.5.1) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5.1) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5.1) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5.1) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5.1) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/adresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/btnANT.self-c13d37edc352f96e386c30b97e326d58f8ef361ee4506a597d1a259e63c0c7f1.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/scaffolds.self-e3ca7917daa305e74e1e9e913f843f50f79dad83e45e14d1c8b116093ea48677.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/sellers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/suppliers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/style.self-8811e229a10b6041589c2d1c7bbbb45f49f03665854449f79bc73c3ea0045090.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:05 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/adresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/sellers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/suppliers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-20 16:47:06 -0200
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-20 16:47:14 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GxiR11xPnlH+wfgiS59ZQljrIneMlEu6OIPRAzY3DpKkN6j5xFMmq5qAonN6ZMpOCaEo4Iz8OzFrlOuu2bu+qw==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'costa.diones@hotmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.5ms)
+
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007fe4b67245f0>):
+  activemodel (4.2.5.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (3.5.6) lib/devise/models/confirmable.rb:102:in `confirmed?'
+  devise (3.5.6) lib/devise/models/confirmable.rb:177:in `confirmation_required?'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `block (2 levels) in halting_and_conditional'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `all?'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:144:in `block in halting_and_conditional'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+  activerecord (4.2.5.1) lib/active_record/callbacks.rb:306:in `_create_record'
+  activerecord (4.2.5.1) lib/active_record/timestamp.rb:57:in `_create_record'
+  activerecord (4.2.5.1) lib/active_record/persistence.rb:504:in `create_or_update'
+  activerecord (4.2.5.1) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5.1) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5.1) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5.1) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5.1) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5.1) lib/active_record/transactions.rb:285:in `save'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.5.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.8ms)
+  [1m[36m (429.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (446.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160218221903)
+  [1m[35m (242.7ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (268.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (254.9ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
+  [1m[36m (31.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAdresses (20160218223000)
+  [1m[35m (311.3ms)[0m  CREATE TABLE `adresses` (`id` int(11) auto_increment PRIMARY KEY, `street` varchar(255), `district` varchar(255), `number` int(11), `state` varchar(255), `city` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218223000')
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateClients (20160218224013)
+  [1m[35m (320.6ms)[0m  CREATE TABLE `clients` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `email` varchar(255), `cpf` varchar(255), `salario` float, `RG` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_clients_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB
+  [1m[36m (639.3ms)[0m  [1mALTER TABLE `clients` ADD CONSTRAINT `fk_rails_44f39ca513`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160218224013')[0m
+  [1m[35m (30.1ms)[0m  COMMIT
+Migrating to CreateCompanies (20160218224826)
+  [1m[36m (295.9ms)[0m  [1mCREATE TABLE `companies` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cnpj` varchar(255), `phone` varchar(255), `branch` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_companies_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (694.0ms)[0m  ALTER TABLE `companies` ADD CONSTRAINT `fk_rails_98f458437c`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218224826')
+  [1m[36m (31.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSellers (20160218230200)
+  [1m[35m (362.9ms)[0m  CREATE TABLE `sellers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cpf` varchar(255), `salario` varchar(255), `adress_id` int(11), `company_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_sellers_on_adress_id`  (`adress_id`) ,  INDEX `index_sellers_on_company_id`  (`company_id`) ) ENGINE=InnoDB
+  [1m[36m (715.6ms)[0m  [1mALTER TABLE `sellers` ADD CONSTRAINT `fk_rails_52989331b0`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (606.9ms)[0m  ALTER TABLE `sellers` ADD CONSTRAINT `fk_rails_10fb31c34b`
+FOREIGN KEY (`company_id`)
+  REFERENCES `companies` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218230200')
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSuppliers (20160218231047)
+  [1m[35m (363.9ms)[0m  CREATE TABLE `suppliers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cpnj` varchar(255), `phone` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_suppliers_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB
+  [1m[36m (661.8ms)[0m  [1mALTER TABLE `suppliers` ADD CONSTRAINT `fk_rails_a382d06035`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160218231047')[0m
+  [1m[35m (40.5ms)[0m  COMMIT
+Migrating to CreateProducts (20160218233811)
+  [1m[36m (431.5ms)[0m  [1mCREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `quantity` float, `price` float, `supplier_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_supplier_id`  (`supplier_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (692.9ms)[0m  ALTER TABLE `products` ADD CONSTRAINT `fk_rails_1aa9b0116b`
+FOREIGN KEY (`supplier_id`)
+  REFERENCES `suppliers` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218233811')
+  [1m[36m (29.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'adresses'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `adresses`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'clients'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `clients`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'companies'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `companies`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `products`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'sellers'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `sellers`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'suppliers'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `suppliers`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-02-20 17:09:03 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (8.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 415ms (Views: 383.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-20 17:09:12 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DSs5E5hEO+qQVx4UmyRFW0JM3tOVc+nIcP7whRMz7QuyBAA9AFiDEPQWREWq39ZXEwbURJUbmUMj6coo/L9dMg==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'costa.diones@hotmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '4a49c44b33635fe658d9877717f3991597c49df19117c46463ed48777d8e9275'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('costa.diones@hotmail.com', '$2a$10$mjsbc5CJRMxP1TD54oEGRejWYG9p7DdyN/0JqU6jXo7oJt.Nj.TI.', '2016-02-20 19:09:12', '2016-02-20 19:09:12', 'jsUp6UTMEhycGyRU47zn', '2016-02-20 19:09:12')[0m
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/mailer/confirmation_instructions.html.erb (4.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 262.5ms
+
+Sent mail to costa.diones@hotmail.com (5202.9ms)
+Date: Sat, 20 Feb 2016 17:09:12 -0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: costa.diones@hotmail.com
+Message-ID: <56c8b9d8d9218_7a40382c7e4972d7@diones-Satellite-L755.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome costa.diones@hotmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=jsUp6UTMEhycGyRU47zn">Confirm my account</a></p>
+
+  [1m[35m (63.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6005ms (ActiveRecord: 65.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 17:09:18 -0200
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-20 17:09:18 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (11.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (358.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (449.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160218221903)
+  [1m[35m (264.6ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (288.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (257.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218221903')
+  [1m[36m (31.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAdresses (20160218223000)
+  [1m[35m (266.1ms)[0m  CREATE TABLE `adresses` (`id` int(11) auto_increment PRIMARY KEY, `street` varchar(255), `district` varchar(255), `number` int(11), `state` varchar(255), `city` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218223000')
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateClients (20160218224013)
+  [1m[35m (321.4ms)[0m  CREATE TABLE `clients` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `email` varchar(255), `cpf` varchar(255), `salario` float, `RG` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_clients_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB
+  [1m[36m (683.7ms)[0m  [1mALTER TABLE `clients` ADD CONSTRAINT `fk_rails_44f39ca513`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160218224013')[0m
+  [1m[35m (30.2ms)[0m  COMMIT
+Migrating to CreateCompanies (20160218224826)
+  [1m[36m (319.8ms)[0m  [1mCREATE TABLE `companies` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cnpj` varchar(255), `phone` varchar(255), `branch` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_companies_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (671.2ms)[0m  ALTER TABLE `companies` ADD CONSTRAINT `fk_rails_98f458437c`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218224826')
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSellers (20160218230200)
+  [1m[35m (356.4ms)[0m  CREATE TABLE `sellers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cpf` varchar(255), `salario` varchar(255), `adress_id` int(11), `company_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_sellers_on_adress_id`  (`adress_id`) ,  INDEX `index_sellers_on_company_id`  (`company_id`) ) ENGINE=InnoDB
+  [1m[36m (671.2ms)[0m  [1mALTER TABLE `sellers` ADD CONSTRAINT `fk_rails_52989331b0`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (707.4ms)[0m  ALTER TABLE `sellers` ADD CONSTRAINT `fk_rails_10fb31c34b`
+FOREIGN KEY (`company_id`)
+  REFERENCES `companies` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218230200')
+  [1m[36m (31.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSuppliers (20160218231047)
+  [1m[35m (409.7ms)[0m  CREATE TABLE `suppliers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `cpnj` varchar(255), `phone` varchar(255), `adress_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_suppliers_on_adress_id`  (`adress_id`) ) ENGINE=InnoDB
+  [1m[36m (706.8ms)[0m  [1mALTER TABLE `suppliers` ADD CONSTRAINT `fk_rails_a382d06035`
+FOREIGN KEY (`adress_id`)
+  REFERENCES `adresses` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160218231047')[0m
+  [1m[35m (102.4ms)[0m  COMMIT
+Migrating to CreateProducts (20160218233811)
+  [1m[36m (407.2ms)[0m  [1mCREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `quantity` float, `price` float, `supplier_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_supplier_id`  (`supplier_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (605.8ms)[0m  ALTER TABLE `products` ADD CONSTRAINT `fk_rails_1aa9b0116b`
+FOREIGN KEY (`supplier_id`)
+  REFERENCES `suppliers` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160218233811')
+  [1m[36m (41.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'adresses'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `adresses`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'clients'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `clients`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'companies'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `companies`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `products`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'sellers'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `sellers`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'suppliers'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `suppliers`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'antERP_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-02-20 17:11:36 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (8.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 341ms (Views: 308.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-20 17:11:44 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xxGdhBiTRjXIY0kzP5uyXfUEv4RxzBKmA67HvFFZyzJ4PqSqgI/+z6wiE2IOYCFRpE61E3GkYi1Quf0RvtV7Cw==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'costa.diones@hotmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '389a4f0c14fa6416159cdbd08ec949479500aee1403f0c06eee592ad3cab8d49'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('costa.diones@hotmail.com', '$2a$10$eJCgWi88ZGzxHpqe2RzOrOE4eEwy22SOhCAU8YM5ZuTfp7e64j72q', '2016-02-20 19:11:45', '2016-02-20 19:11:45', 'mgU1jUE_WkZNx4BixWnG', '2016-02-20 19:11:45')[0m
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/mailer/confirmation_instructions.html.erb (6.6ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 229.1ms
+
+Sent mail to costa.diones@hotmail.com (4118.3ms)
+Date: Sat, 20 Feb 2016 17:11:45 -0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: costa.diones@hotmail.com
+Message-ID: <56c8ba717f21f_7ad1365a9d44592@diones-Satellite-L755.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome costa.diones@hotmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=mgU1jUE_WkZNx4BixWnG">Confirm my account</a></p>
+
+  [1m[35m (48.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 4813ms (ActiveRecord: 49.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 17:11:49 -0200
+Processing by PagesController#start as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-20 17:11:49 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (15.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=mgU1jUE_WkZNx4BixWnG" for 127.0.0.1 at 2016-02-20 17:12:02 -0200
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"mgU1jUE_WkZNx4BixWnG"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'mgU1jUE_WkZNx4BixWnG'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `confirmed_at` = '2016-02-20 19:12:02', `updated_at` = '2016-02-20 19:12:02' WHERE `users`.`id` = 1[0m
+  [1m[35m (35.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 50ms (ActiveRecord: 36.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-20 17:12:02 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (9.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-02-20 17:12:08 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+LAhhwwOWisbs12WNeyGIBHGHo03gx0mMEgkQlk6zRNHnxiplBLi0X/yB8cEFxUsQIwUGjfrba1jXx7vtrZ9Kg==", "user"=>{"email"=>"costa.diones@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'costa.diones@hotmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2016-02-20 19:12:08', `current_sign_in_at` = '2016-02-20 19:12:08', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-02-20 19:12:08' WHERE `users`.`id` = 1[0m
+  [1m[35m (39.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 158ms (ActiveRecord: 40.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 17:12:08 -0200
+Processing by PagesController#start as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered pages/start.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2016-02-20 17:12:08 -0200
+
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.4ms)
