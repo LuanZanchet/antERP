@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get 'clientes' => 'clients#index'
   get 'produtos' => 'products#index'
   get 'novoproduto' => 'products#new'
+  get 'novoCliente' => 'clients#new'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
