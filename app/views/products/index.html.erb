@@ -1,33 +1,199 @@
-<p id="notice"><%= notice %></p>
+<div class="nav-side-menu">
+    <div class="brand">
+      Aqui vai o Logo</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
-<h1>Listing Products</h1>
+        <div class="menu-list">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Quantity</th>
-      <th>Price</th>
-      <th>Supplier</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> Minha Conta </a>
+                </li>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.quantity %></td>
-        <td><%= product.price %></td>
-        <td><%= product.supplier %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+            <ul id="menu-content" class="menu-content collapse out ">
+                <li >
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
 
-<%= link_to 'New Product', new_product_path %>
+                <li  data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="/clientes"><i class="fa fa-users fa-lg"></i> Clientes </a>
+                </li>
+
+                <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="/produtos"><i class="fa fa-list fa-lg"></i> Produtos </a>
+                </li>
+
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-wrench fa-lg"></i> Serviços </a>
+                </li>
+
+
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-tags fa-lg"></i> Ordem de serviço</a>
+                </li>
+
+                 <li data-toggle="collapse" data-target="#new" class="collapsed">
+              <a href="#"><i class="fa fa-shopping-cart fa-lg"></i> Vendas</a>
+                </li>
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-folder fa-lg"></i> Arquivos </a>
+                </li>
+
+                 <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-money fa-lg"></i> Financeiro </a>
+                </li>
+
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-sign-out fa-lg"></i> <%= link_to('Sair', destroy_user_session_path, :method => :delete) %> </a>
+                </li>
+            </ul>
+     </div>
+</div>
+
+<div class=" col-xs-3 ">
+
+</div>
+
+
+
+<div class="container-fluid ">
+
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-xs-9">
+          <ol class="breadcrumb">
+            <li class="active">
+              <i class="fa fa-fw "></i> Produtos
+            </li>
+          </ol>
+        </div>
+        </div>
+
+
+
+        <div class="row ">
+          <div class=" col-xs-3 ">
+
+          </div>
+                  <div class="col-xs-9">
+
+
+                          <!-- /.panel-heading -->
+
+
+                              <!-- /.table-responsive -->
+
+                              <div class="row">
+                                              <div class="col-lg-12">
+                                                  <div class="panel panel-default">
+                                                      <div class="panel-heading">
+                                                          Lista de Produtos
+                                                      </div>
+
+                                                      <div class="panel-body ">
+
+                                                    <span class="input-group-btn ">
+                                                              <a href="novoproduto" class="btn btn-primary footerFinal">  Novo Produto</a>
+                                                            </span>
+
+
+
+                                                  </div>
+
+                                                      <!-- /.panel-heading -->
+                                                      <div class="panel-body">
+                                                          <div class="table-responsive">
+
+                                                              <table class="table table-striped table-bordered table-hover">
+
+                                                                  <thead>
+                                                                      <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Quantity</th>
+                                                                        <th>Price</th>
+                                                                        <th>Supplier</th>
+                                                                        <th>Ver</th>
+                                                                        <th>Editar</th>
+                                                                        <th>Excluir</th>
+
+
+
+
+
+
+                                                                      </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                      <% @products.each do |product| %>
+                                                                      <tr>
+                                                                        <td><%= product.name %></td>
+                                                                        <td><%= product.quantity %></td>
+                                                                        <td><%= product.price %></td>
+                                                                        <td><%= product.supplier.name %></td>
+                                                                        <td><%= link_to 'Ver', product %></td>
+                                                                        <td><%= link_to 'Editar', edit_product_path(product) %></td>
+                                                                        <td><%= link_to 'Excluir', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+
+
+                                                                      </tr>
+
+                                                                      <%end%>
+
+                                                                  </tbody>
+                                                              </table>
+
+
+
+                                                                      </tbody>
+                                                                  </table>
+                                                          </div>
+                                                          <!-- /.table-responsive -->
+                                                      </div>
+                                                      <!-- /.panel-body -->
+                                                  </div>
+                                                  <!-- /.panel -->
+                                              </div>
+                                              <!-- /.col-lg-6 -->
+
+                                              <!-- /.col-lg-6 -->
+                                          </div>
+
+
+
+
+
+
+
+
+
+
+                          <!-- /.panel-body -->
+
+                      <!-- /.panel -->
+                  </div>
+                  <!-- /.col-lg-12 -->
+              </div>
+
+          </thead>
+
+
+<p id="notice"><%= alert %></p>
+
+
+
+
+
+      <!-- /.row -->
+
+    </div>
